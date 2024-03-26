@@ -12,7 +12,13 @@ valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 
 function valuePair(obj1, obj2, key) {
   // Your code here
+  return [obj1[key], obj2[key]];
 }
+
+let object1 = {name: 'One', location: 'NY', age: 3};
+let object2 = {name: 'Two', location: 'SF'};
+console.log(valuePair(object1, object2, 'location'));
+console.log(valuePair(object1, object2, 'name'));
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = valuePair;
